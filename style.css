@@ -1,0 +1,366 @@
+
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+scroll-behavior: smooth;
+}
+
+nav {
+width: 100%;
+height: 40px;
+background-color:#102d4f;
+position: fixed;
+z-index: 999;
+box-shadow: 5px 5px 5px gray;
+}
+
+
+#Logo{
+max-width: auto;
+max-height: 50px;
+position: absolute;
+left: 15px;
+padding-bottom: 5px;
+animation-name: car_move;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+}
+
+@keyframes car_move {
+0% {left: -50px;}
+100% {left: 90px;}
+}
+
+#Company_name {
+width: auto;
+height: auto;
+position: absolute;
+color: white;
+top: 10px;
+left: 150px;
+font-family: sans-serif;
+text-shadow: 2px 2px 2px gray;
+}
+
+#Home {
+position: absolute;
+right:450px;
+height: 30px;
+padding-top: 5px;
+cursor: pointer;
+}
+
+span{
+position: fixed;
+right: 15px;
+top: 10px;
+}
+
+span a {
+text-decoration: none;
+color: white;
+padding-inline: 10px;
+font-family: sans-serif;
+text-shadow: 2px 2px 2px gray;
+transition: scroll;
+}
+
+span a:hover {
+color: cyan;
+cursor: pointer;
+}
+
+    
+.Product{
+width: 100%;
+height: 350px;
+position: relative;
+background-color: rgb(44, 43, 43);
+}
+
+
+.Car_info{       
+width: 50%;
+height: 80%;
+position: absolute;
+text-align: center;
+animation-name: Info_move;
+animation-duration: 3s;
+animation-iteration-count: 1;   
+}
+
+@keyframes Info_move{
+0%{left:-500px;}
+100% {left: 0px;}
+}
+
+
+.Car_info p {
+padding-top: 90px;
+padding-left: 50px;
+padding-right: 50px;
+overflow: hidden;
+font-family:sans-serif;
+font-size: 18px;
+color: white;
+}
+
+
+#Car_Picture{
+width: 500px;
+height: auto;
+position: absolute;
+right: 150px;
+top: 60px;
+filter: drop-shadow(10px 0px 30px white);
+animation-name: display_car;
+animation-iteration-count: 1;
+animation-duration: 3s;
+}
+
+@keyframes display_car{
+0% {right:-500px;}
+100%{right: 150px;}
+}
+
+#Car_Picture:hover{
+width: 500px;
+height: auto;
+position: absolute;
+right: 150px;
+top: 60px;
+transform: scale(1.2);
+}
+
+#changcolor_container {
+width:250px;
+height: 50px;
+position: relative;
+top: 245px;
+left: 200px;
+animation-name: display_color_selector;
+animation-iteration-count: 1;
+animation-duration: 3s;
+}
+
+@keyframes display_color_selector{
+0% {left:-500px;}
+100%{left: 200px;}
+}
+
+#changeImage_Pink {
+width: 40px;
+height: 40px;
+position: absolute;
+bottom: 3px;
+left: 20px;
+border-radius: 100%;
+background-color: rgb(202, 28, 86);
+}
+
+#changeImage_Green {
+width: 40px;
+height: 40px;
+position: absolute;
+bottom: 3px;
+left:80px;
+border-radius: 100%;
+background-color: rgb(65, 238, 169);
+}
+
+#changeImage_Cyne {
+width: 40px;
+height: 40px;
+position: absolute;
+bottom: 3px;
+left: 140px;
+border-radius: 100%;
+background-color:rgb(17, 199, 240);
+}
+
+#changeImage_Blue {
+width: 40px;
+height: 40px;
+position: absolute;
+bottom: 3px;
+left: 200px;
+border-radius: 100%;
+background-color:blue;
+}
+
+
+.About_us {
+width: 100%;
+height: 670px;
+position: relative;
+padding-top: 20px;
+overflow: hidden;
+background-color: rgb(44, 43, 43);
+
+}
+
+.box_animation {
+width: 90%;
+height: 620px;
+border: 2px solid white;
+position: absolute;
+left: 70px;
+padding-top: 20px;
+animation-duration: 6s;
+animation-name: change_color;
+animation-iteration-count: infinite;
+}
+
+@keyframes change_color{
+0%{border-color: transparent transparent transparent transparent ; border-style: solid;}    
+25%{border-color: white transparent transparent transparent ; border-style: solid;}
+50%{border-color: white white transparent transparent ; border-style: solid;}
+75%{border-color: white white white transparent ; border-style: solid;}
+100%{border-color: white; border-style: solid;background-color: #2C3E50;}
+}
+
+
+.About_us ::first-letter{
+font-size: 30px;
+font-weight: bold;
+}
+
+.About_us h1 {
+text-align: center;
+font-family: sans-serif;
+color: white;
+
+}
+
+.About_us p {
+font-family: sans-serif;
+padding-top: 20px;
+padding-left: 50px;
+padding-right: 50px;
+color: white;
+}
+
+.Contact_us {
+width: 100%;
+height: 400px;
+position: relative;
+line-height: 2;
+background-color: rgb(44, 43, 43);
+background-image: url(/Asset/contact_bg.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+/*box-shadow:10px 10px 20px inset white;*/
+}
+
+
+.Contact_us form{
+left: 30%;
+top: 20px;
+width: 500px;
+height: 350px;    
+position: relative;
+box-shadow: 10px 10px gray;
+border-radius: 5%;
+background-color:rgb(26, 51, 57, 0.7);
+
+}
+
+.Contact_us label{
+position: absolute;
+left: 10%;
+font-family: sans-serif;
+color: white;
+}
+
+.Contact_us h1{
+font-family: sans-serif;
+text-align: center;
+color: white;
+
+}
+
+.Contact_us input{
+position: absolute;
+left: 40%;
+width: 250px;
+height: 25px;
+border: 2px solid white;
+border-radius: 10px;
+}
+
+.Contact_us textarea{
+position:absolute;
+left: 40%;
+width: 250px;
+height:100px;
+border: 2px solid white;
+border-radius: 10px;
+}
+
+#Register {
+position: absolute;
+left: 40%;
+bottom:5%;
+width: 100px;
+height: 50px;
+border-radius: 10%;
+border: none;
+color: cyan;
+background-color:black;
+}
+
+#Register:hover {
+background-color: black;
+color: white;
+box-shadow: 5px 5px 50px cyan;
+}
+
+
+footer {
+width: 100%;
+height: 40px;
+background-color:#102d4f;
+}
+
+footer p {
+color:white;
+text-align: center;
+font-family: sans-serif;
+padding-top: 5px;
+}
+
+.image-grid {
+display: flex;
+flex-wrap: nowrap;
+margin:0px;
+position: relative;
+align-items: center;
+justify-content: center;
+background-color:  rgb(44, 43, 43);;
+}
+
+.image-wrapper {
+flex: 1 0 25%; 
+padding: 5px; 
+max-width: 150px; 
+transition: max-width 0.5s ease;
+border: none;
+}
+  
+.image-wrapper:hover{
+max-width: 100%; 
+overflow: hidden;
+transform: rotate(2deg);
+
+}
+  
+.image-wrapper img {
+width: 100%;
+height: 400px; 
+object-fit: cover;
+overflow: hidden;
+border: none;
+border-radius: 5%;
+}

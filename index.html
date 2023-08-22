@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyline Premium Car</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<nav>
+    <img id="Logo"  src="Asset/Logo.png">
+    <div id="Company_name">
+        <p>SKYLINE PREMIUM CAR</p>
+    </div>
+    <a href="index.html"><img id="Home" src="Asset/Home Botton.png" alt="Home"></a>
+    <span>
+        <a href="#product">PRODUCT</a>
+        <a href="#aboutus">ABOUT US</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#contactus">CONTACT US</a>
+    </span>
+</nav>
+<body>
+    <Section class="Product" id="product">
+        <div class="Car_info">
+            <p>"Experience the unrivaled luxury and uniqueness of the CX-70, our premium sports car, at Skyline Premium Car. With an exceptional collection of top-tier sports cars from leading brands worldwide, we invite you to indulge in a driving experience like no other. Embrace the allure of a sports car's identity, featuring opulence and cutting-edge technology. Glide through every touch of your journey at Skyline Premium Car, where confidence meets certainty in transforming your dreams into reality."</p> 
+        </div>
+        <img id="Car_Picture" src="Asset/Car_Blue.png" alt="Car Picture">
+        <div id="changcolor_container">
+            <div id="changeImage_Pink"></div>
+            <div id="changeImage_Green"></div>
+            <div id="changeImage_Cyne"></div>
+            <div id="changeImage_Blue"></div>
+        </div>
+        <script src="script.js"></script>
+   
+    </Section>
+    <section class="About_us" id="aboutus">
+      <div class="box_animation">
+        <h1>Welcome to Skyline Premium Car</h1>
+        <p>
+          Welcome to Skyline Premium Car, an esteemed dealership with a rich automotive legacy. With decades of experience, we proudly present an exquisite collection of premium vehicles, epitomizing luxury and elegance. Our commitment to personalized service ensures that every client discovers their dream car among our curated selection.
+        </p>
+        <p>
+          Established years ago, our dealership has maintained an unwavering standard of excellence in the luxury automobile market. Renowned for delivering top-tier vehicles, we have earned the trust of our customers by surpassing their expectations. At Skyline Premium Car, customer satisfaction remains our core value, ensuring that your journey with us is both memorable and rewarding.
+        </p>
+        <p>
+          Step into our showroom and be captivated by an unparalleled selection that caters to even the most discerning tastes. From world-renowned brands to rare, exclusive models, each car embodies sophistication and craftsmanship. Whether you desire classic elegance, cutting-edge technology, or powerful performance, we have the perfect car to complement your style and aspirations.
+        </p>
+        <p>
+          Our team of experienced professionals understands that purchasing a premium car is a deeply personal experience. With expert guidance and attentiveness, we tailor our service to meet your preferences and needs. Your journey towards owning your dream car will be seamless and satisfying, as we make your satisfaction our top priority.
+        </p>
+        <p>
+          Beyond your purchase, our commitment to you continues with our comprehensive after-sales service. Rest assured that your premium car will be maintained in peak condition, preserving its performance and beauty for years to come. We cherish the lasting bond with our customers, and we eagerly look forward to being your trusted partner in your pursuit of automotive luxury.
+        </p>
+        <p>
+          At Skyline Premium Car, we believe that choosing a premium vehicle is more than a mere transaction; it is an exceptional journey. Let us accompany you every step of the way, ensuring an extraordinary experience that will stay with you for a lifetime. Visit our showroom today, and embark on an unforgettable voyage through the world of automotive luxury – welcome to our timeless legacy.
+        </p>
+      </div>
+    </section>
+    <section class="image-grid" id="gallery">
+        <div class="image-wrapper">
+          <img src="Asset/Car1.jpg" alt="Image 1">
+        </div>
+        <div class="image-wrapper">
+          <img src="Asset/Car2.jpg" alt="Image 2">
+        </div>
+        <div class="image-wrapper">
+          <img src="Asset/Car3.jpg" alt="Image 3">
+        </div>
+        <div class="image-wrapper">
+          <img src="Asset/Car4.jpg" alt="Image 4">
+        </div>
+        <div class="image-wrapper">
+            <img src="Asset/Car5.jpg" alt="Image 5">
+        </div>
+        <div class="image-wrapper">
+            <img src="Asset/Car6.jpg" alt="Image 6">
+        </div>
+        <div class="image-wrapper">
+            <img src="Asset/Car7.jpg" alt="Image 7">
+        </div>
+    
+      </section>
+
+    <section class="Contact_us" id="contactus">
+        <form action="/submit_form.php" method="post">
+            <h1> Contact Us </h1>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <br>
+            <button id="Register">Register</button>
+        </form>
+    </section>
+</body>
+<footer>
+    <p>Copy Right Skyline Company Limited 2016</p>
+</footer>
+</html>
